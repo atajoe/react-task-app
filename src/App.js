@@ -19,7 +19,7 @@ class App extends React.Component{
     e.preventDefault();
     this.setState({
       tasksList: [...this.state.tasksList,this.state.task]
-    }, () => console.log('Form submitted. Here are the list of tasks LOL : ', this.state.tasksList) )
+    }, () => console.log('Form submitted. Here are the list of tasks LOL AGAIN : ', this.state.tasksList) )
   }
 
   handleChange = (event) => {
