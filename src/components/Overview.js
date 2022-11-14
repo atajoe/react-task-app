@@ -9,10 +9,13 @@ class Overview extends React.Component{
 
     render(){
         const {message} = this.props;
-        // const listOfTasks = message.map((item,i) => <div key={i}>Task item: {item}</div>)
+        const listOfTasks = message.map((item,i) => <li key={i}>Task item: {item}</li>)
+        // const listOfTasks = message.map((item,i) -> <div key={i}>Task item: {item}</div>)
         return (
             <div>
-                {message.map((item,i) => <div key={i}>Task item: {item}</div>)}
+                <ul>
+                {listOfTasks}
+                </ul>
             </div>
         )
     }
